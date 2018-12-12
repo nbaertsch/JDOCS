@@ -176,6 +176,7 @@ public class ComplexUI extends javax.swing.JFrame {
         // get the max node depth
         this.maxNodeDepthField.setText("" + ctrl.getMaxNodeDepth());
         
+        
         // get total link nodes
         this.totalLinksField.setText("" + ctrl.getTotalLinkNodes());
         

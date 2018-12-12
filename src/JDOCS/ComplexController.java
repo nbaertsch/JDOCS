@@ -24,6 +24,7 @@ public class ComplexController {
         this.createUI();
     }
     
+    // builds UI in event queue thread
     private void createUI(){
         this.gui = new ComplexUI(this);
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -46,8 +47,7 @@ public class ComplexController {
     }
     
     public int getTotalLinkNodes(){
-        // TODO: THIS
-        return 0;
+        return this.doc.scanLinkNodes();
     }
     
     //TESTING
